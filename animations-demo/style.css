@@ -1,0 +1,96 @@
+body {
+  background-color: #333;
+}
+
+.box {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes move {
+  0% {
+    background-color: #fff;
+    left: 0;
+    top: 0;
+  }
+
+  25% {
+    background-color: green;
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: yellow;
+    left: 0;
+    top: 200px;
+  }
+
+  100% {
+    background-color: #fff;
+    left: 0;
+    top: 0;
+  }
+}
+
+#g3432 path:nth-child(3) {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite;
+}
+#g3432 path:nth-child(5) {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .5s;
+}
+#g3432 path:nth-child(7) {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .7s;
+}
+#path2806  {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .7s;
+}
+#ball1  {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .7s;
+}
+#ball2  {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .2s;
+}
+#ball3 {
+  fill: yellow !important;
+  animation: hideshow 2s ease infinite .9s;
+}
+
+@keyframes tree {
+  from {
+    fill: green !important;
+  }
+
+  to {
+    fill: red !important;
+  }
+}
+
+@keyframes hideshow {
+  0% { opacity: 1;
+  fill: green; }
+  10% { opacity: 1;
+  fill: green;
+  }
+  15% { opacity: 1;
+  fill: blue; }
+  100% { opacity: 1; }
+}
